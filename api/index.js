@@ -25,7 +25,7 @@ app.get('/api', async (req, re) => {
         title: v.name_with_namespace,
         desc: v.description || 'No description available.',
         link: v.web_url,
-        site: 'GitLab'
+        site: 'GitLab.com'
       })
     });
     res.sort(function(a, b){return 0.5 - Math.random()});
